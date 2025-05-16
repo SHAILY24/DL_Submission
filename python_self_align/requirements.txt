@@ -1,0 +1,53 @@
+# Core dependencies
+datasets==2.18.0
+huggingface-hub==0.29.3
+transformers==4.41.2
+openai==1.3.7
+# safetensors is often implicitly required by HF libraries
+safetensors==0.5.3
+# tokenizers is often implicitly required by HF libraries
+tokenizers==0.19.1
+
+# Data processing
+tqdm==4.67.1
+pandas==2.2.3
+numpy==2.1.2
+smart_open==6.4.0
+boto3==1.34.109
+# botocore==1.34.162 # Usually installed via boto3
+
+# Code processing and evaluation
+tree-sitter==0.20.4
+pylint==3.0.2
+pytest==7.4.3
+mypy==1.8.0
+black==23.11.0
+
+# Utility
+tenacity==8.2.3
+tiktoken==0.5.1
+jsonlines==4.0.0
+# pyright==1.1.350
+python-dotenv==1.0.0
+
+# Hugging Face libraries for generation
+accelerate==0.28.0
+# Updated bitsandbytes version from re-install
+bitsandbytes==0.45.5
+
+# Optional, but often useful with HF
+sentencepiece==0.1.99
+protobuf==4.25.1
+
+# Tree-sitter for code parsing
+# tree-sitter==0.20.4 # Already listed above
+tree-sitter-languages==1.8.0
+
+# Development and Linting
+requests==2.32.3
+rich==13.4.2
+PyYAML==6.0.2 # Often useful for configs
+# --- Excluded ---
+# torch, torchvision, torchaudio (Install separately based on CUDA version)
+# nvidia-* packages (Installed with torch CUDA version)
+# Other env-specific packages (e.g., ipykernel, jupyter)
